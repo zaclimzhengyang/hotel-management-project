@@ -4,7 +4,7 @@ import com.example.hotelManageMent.exception.BookingException;
 import com.example.hotelManageMent.exception.MinFloorAreaException;
 import com.example.hotelManageMent.amenity.InRoomAmenity;
 import com.example.hotelManageMent.amenity.SharedAmenity;
-import com.example.hotelManageMent.model.Bed;
+import com.example.hotelManageMent.hotel.Bed;
 
 public class RoomMain {
 

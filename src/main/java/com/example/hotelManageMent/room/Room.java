@@ -3,7 +3,7 @@ package com.example.hotelManageMent.room;
 import com.example.hotelManageMent.exception.BookingException;
 import com.example.hotelManageMent.exception.MinFloorAreaException;
 import com.example.hotelManageMent.amenity.Amenity;
-import com.example.hotelManageMent.model.Bed;
+import com.example.hotelManageMent.hotel.Bed;
 
 import java.util.ArrayList;
 import java.util.HashMap;

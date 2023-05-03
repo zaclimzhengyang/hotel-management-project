@@ -1,4 +1,4 @@
-package com.example.hotelManageMent.model;
+package com.example.hotelManageMent.hotel;
 
 import java.util.HashMap;
 

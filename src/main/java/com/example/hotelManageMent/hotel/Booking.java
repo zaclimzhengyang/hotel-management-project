@@ -1,6 +1,7 @@
-package com.example.hotelManageMent.model;
+package com.example.hotelManageMent.hotel;
 
 import com.example.hotelManageMent.exception.BookingException;
+import com.example.hotelManageMent.guest.Guest;
 import com.example.hotelManageMent.room.Room;
 
 import java.util.Date;

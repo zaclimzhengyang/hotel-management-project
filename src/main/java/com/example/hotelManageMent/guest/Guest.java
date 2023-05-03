@@ -1,7 +1,6 @@
-package com.example.hotelManageMent.model;
+package com.example.hotelManageMent.guest;
 
 import java.util.ArrayList;
-import java.util.Date;
 
 public class Guest {
     private String passport;
