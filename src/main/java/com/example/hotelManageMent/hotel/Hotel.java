@@ -34,7 +34,6 @@ public class Hotel {
         if (endDate.compareTo(startDate) < 0) {
             return false;
         }
-        // TODO: check start or end dates are not in the roomAvailability dictionary
         ArrayList<Date> datesToCheck = getDatesBetweenStartAndEnd(startDate, endDate);
         for (Date currDate: datesToCheck) {
             if (!roomAvailability.containsKey(currDate)) {
