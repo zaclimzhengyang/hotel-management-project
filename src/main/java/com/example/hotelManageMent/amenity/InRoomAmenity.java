@@ -1,4 +1,4 @@
-package com.example.hotelManageMent.model;
+package com.example.hotelManageMent.amenity;
 
 public class InRoomAmenity extends Amenity {
     double floorArea;

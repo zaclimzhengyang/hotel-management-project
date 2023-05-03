@@ -1,4 +1,4 @@
-package com.example.hotelManageMent.model;
+package com.example.hotelManageMent.amenity;
 
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;

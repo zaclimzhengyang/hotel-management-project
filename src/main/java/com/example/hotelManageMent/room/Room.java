@@ -1,13 +1,12 @@
-package com.example.hotelManageMent.model;
+package com.example.hotelManageMent.room;
 
 import com.example.hotelManageMent.exception.BookingException;
 import com.example.hotelManageMent.exception.MinFloorAreaException;
+import com.example.hotelManageMent.amenity.Amenity;
+import com.example.hotelManageMent.model.Bed;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
-
-import static javax.swing.UIManager.put;
 
 public class Room {
     private static final double MIN_EXIT_SPACE = 1.84;

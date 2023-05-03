@@ -1,7 +1,10 @@
-package com.example.hotelManageMent.model;
+package com.example.hotelManageMent.room;
 
 import com.example.hotelManageMent.exception.BookingException;
 import com.example.hotelManageMent.exception.MinFloorAreaException;
+import com.example.hotelManageMent.amenity.InRoomAmenity;
+import com.example.hotelManageMent.amenity.SharedAmenity;
+import com.example.hotelManageMent.model.Bed;
 
 public class RoomMain {
 

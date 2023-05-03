@@ -1,4 +1,4 @@
-package com.example.hotelManageMent.model;
+package com.example.hotelManageMent.amenity;
 
 public abstract class Amenity {
     private String itemCode;
