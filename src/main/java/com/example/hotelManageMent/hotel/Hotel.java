@@ -22,13 +22,21 @@ public class Hotel {
         bookings = new HashMap<String, Booking>();
     }
 
-    public Guest searchGuest (String passport) {
+    public Optional<Guest> searchGuest (String passport) {
         if (guests.containsKey(passport)) {
-            return guests.get(passport);
+            return Optional.of(guests.get(passport));
         } else {
-            return null;
+            return Optional.empty();
         }
     }
+
+//    public static void main(String[] args) {
+//        Hotel hotel = new Hotel("test", "testFileName");
+//        hotel.guests = new HashMap<String,Guest>();
+//        hotel.guests.put("nonExistPassPort", new Guest("passport", "name", "country"));
+//        Optional<Guest> res = hotel.searchGuest("nonExistPassPort");
+//        System.out.println(res);
+//    }
 
     public boolean checkRoomAvailability(Date startDate, Date endDate) {
         if (endDate.compareTo(startDate) < 0) {
@@ -54,14 +62,14 @@ public class Hotel {
         return sb.toString();
     }
 
-    public Amenity getAmenity (String itemCode) {
+    public Optional<Amenity> getAmenity (String itemCode) {
         for (Amenity currAmenity: amenities) {
             String currItemCode = currAmenity.getItemCode();
             if (currItemCode == itemCode) {
-                return currAmenity;
+                return Optional.of(currAmenity);
             }
         }
-        return null;
+        return Optional.empty();
     }
 
     public Booking searchBooking(String bookingId) {

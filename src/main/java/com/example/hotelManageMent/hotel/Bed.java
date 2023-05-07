@@ -26,10 +26,11 @@ public class Bed {
     }
 
     public double getFloorArea(String type) {
-        if (typeSize.get(type) == null) {
+        Double floorArea = typeSize.get(type);
+        if (floorArea == null) {
             return 0;
         } else {
-            return typeSize.get(type);
+            return floorArea;
         }
     }
 
