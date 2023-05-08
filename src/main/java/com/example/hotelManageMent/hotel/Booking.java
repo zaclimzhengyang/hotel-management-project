@@ -8,7 +8,7 @@ import java.util.Date;
 
 public class Booking {
     private static int nextId = 1;
-    private String bookingId;
+    private int bookingId;
     private Guest guest;
     private Room room;
     private Date checkInDate;
@@ -17,6 +17,8 @@ public class Booking {
     private String status;
 
     public Booking (Guest guest, Room room, Date checkInDate, Date checkOutDate) {
+        this.bookingId = this.nextId;
+        this.nextId++;
         this.guest = guest;
         this.room = room;
         this.checkInDate = checkInDate;
@@ -39,7 +41,7 @@ public class Booking {
             }
     }
 
-    public String getBookingId() {
+    public int getBookingId() {
         return bookingId;
     }
 

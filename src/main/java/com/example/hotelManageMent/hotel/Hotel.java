@@ -16,7 +16,7 @@ public class Hotel {
     private String name;
     private HashMap<String, Guest> guests; // key: passport no, value: Guest object
     private ArrayList<Amenity> amenities;
-    private HashMap<String,Booking> bookings; // key: booking ID, value: Booking object
+    private HashMap<Integer,Booking> bookings; // key: booking ID, value: Booking object
     private HashMap<Date,ArrayList<Integer>> roomAvailability; // key: date, value: standard room count and deluxe room count
     /**
      * <dd-mon-yyyy>,<standard rooms available>,<deluxe rooms available>
@@ -29,7 +29,7 @@ public class Hotel {
         setupGuest();
         setupAmenities();
         saveRoomAvailability();
-        bookings = new HashMap<String, Booking>();
+        bookings = new HashMap<Integer, Booking>();
     }
 
     public Optional<Guest> searchGuest (String passport) {
@@ -145,7 +145,7 @@ public class Hotel {
             }
         }
         newBooking.setStatus("Confirmed");
-        String newBookingId = newBooking.getBookingId();
+        int newBookingId = newBooking.getBookingId();
         bookings.put(newBookingId, newBooking);
     }
 
